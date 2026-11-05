@@ -1,0 +1,97 @@
+Logistic Regression — classification report
+===========================================
+precision    recall  f1-score   support
+
+         DNS       0.00      0.00      0.00         6
+        SMPP       0.00      0.00      0.00         1
+         TCP       1.00      0.09      0.17     90816
+      THRIFT       0.00      0.00      0.00        18
+       TLSv1       0.00      0.00      0.00       603
+     TLSv1.2       0.00      0.00      0.00         8
+     TLSv1.3       0.00      0.00      0.00       210
+         UDP       0.92      1.00      0.96    901482
+
+    accuracy                           0.92    993144
+   macro avg       0.24      0.14      0.14    993144
+weighted avg       0.92      0.92      0.88    993144
+
+
+KNN — classification report (10,000-sample test subset)
+=======================================================
+KNN Classification Report (on subset):
+
+              precision    recall  f1-score   support
+
+         DNS       0.00      0.00      0.00         0
+        SMPP       0.00      0.00      0.00         0
+         TCP       0.97      0.99      0.98       939
+      THRIFT       0.00      0.00      0.00         0
+       TLSv1       0.00      0.00      0.00         4
+     TLSv1.2       0.00      0.00      0.00         0
+     TLSv1.3       0.00      0.00      0.00         0
+         UDP       1.00      1.00      1.00      9057
+
+    accuracy                           1.00     10000
+   macro avg       0.25      0.25      0.25     10000
+weighted avg       1.00      1.00      1.00     10000
+
+
+Random Forest — classification report
+=====================================
+Random Forest Accuracy: 99.7045%
+
+Classification Report:
+
+              precision    recall  f1-score   support
+
+         DNS       0.00      0.00      0.00         6
+        SMPP       0.00      0.00      0.00         1
+         TCP       0.98      1.00      0.99     90816
+      THRIFT       0.00      0.00      0.00        18
+       TLSv1       1.00      0.01      0.03       603
+     TLSv1.2       0.00      0.00      0.00         8
+     TLSv1.3       0.80      0.02      0.04       210
+         UDP       1.00      1.00      1.00    901482
+
+    accuracy                           1.00    993144
+   macro avg       0.47      0.25      0.26    993144
+weighted avg       1.00      1.00      1.00    993144
+
+
+Random Forest — classification report (repeated output)
+=======================================================
+precision    recall  f1-score   support
+
+         DNS       0.00      0.00      0.00         6
+        SMPP       0.00      0.00      0.00         1
+         TCP       0.98      1.00      0.99     90816
+      THRIFT       0.00      0.00      0.00        18
+       TLSv1       1.00      0.01      0.03       603
+     TLSv1.2       0.00      0.00      0.00         8
+     TLSv1.3       0.80      0.02      0.04       210
+         UDP       1.00      1.00      1.00    901482
+
+    accuracy                           1.00    993144
+   macro avg       0.47      0.25      0.26    993144
+weighted avg       1.00      1.00      1.00    993144
+
+
+Earlier Decision Tree experiment (cell 31; separate from the max_depth=10 model used in the final comparison)
+=========================================================================================================
+Accuracy: 0.997970082888282
+
+Classification Report:
+               precision    recall  f1-score   support
+
+         DNS       0.43      0.50      0.46         6
+        SMPP       0.00      0.00      0.00         1
+         TCP       0.99      0.99      0.99     90816
+      THRIFT       0.00      0.00      0.00        18
+       TLSv1       0.79      0.83      0.81       603
+     TLSv1.2       0.29      0.25      0.27         8
+     TLSv1.3       0.83      0.79      0.81       210
+         UDP       1.00      1.00      1.00    901482
+
+    accuracy                           1.00    993144
+   macro avg       0.54      0.54      0.54    993144
+weighted avg       1.00      1.00      1.00    993144
